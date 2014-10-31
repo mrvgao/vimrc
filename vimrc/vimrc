@@ -1,0 +1,129 @@
+"If you're editing it, you can reload it with:
+"so %
+set backspace=2		" more powerful backspci
+
+"kk Don't write backup file if vim is being called by "crontab -e"
+au BufWrite /private/tmp/crontab.* set nowritebackup
+" Don't write backup file if vim is being called by "chpass"
+au BufWrite /private/etc/pw.* set nowritebackup
+
+set history=100
+set ruler
+set nu
+syntax on
+set hlsearch
+
+"colorscheme desert
+colorscheme desert
+
+" set the one tab is 2 space
+"set autoindent
+
+set autoindent
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+
+set expandtab
+
+" set tab end
+
+" set the fold command
+
+set incsearch "jump to search words as you type
+
+"set dedesddwadawddddtionary
+set dictionary+=/usr/share/dict/words
+
+"set the jk to dispear the high light search 
+
+"add abbr
+
+abbr imp import
+abbr rm random
+abbr rmi randint
+autocmd BufRead *.py nmap <F10> :!python %<CR>
+
+inoremap  Sp System.out.println("");<Esc><Left><Left>i
+
+
+"set map mode
+nnoremap <C-\> <Esc>
+vnoremap <C-\> <Esc>gV
+inoremap <C-\> <Esc>`^
+onoremap <C-\> <Esc>
+"Set the atl + h == right arrow
+inoremap <C-l> <Left>
+onoremap p i(
+onoremap m i{
+onoremap ' i'
+onoremap " i"
+"onoremap b /return<CR>:noh<CR>O
+"Mon Aug 11 10:50:51 CST 2014
+"Add new python hightlight
+
+"Fri Aug 22 16:38:08 CST 2014
+"when in noremap mode input HN to dispear the hightlight search
+
+"Fri Aug 22 22:37:14 CST 2014
+"added change buffer in ls
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+cmap W w
+"Sun Aug 24 22:15:47 CST 2014
+"set plugin 'netrw' on
+set nocompatible
+filetype plugin on
+
+"set plugin math it on
+"Tue Aug 26 00:20:40 CST 2014
+runtime macros/matchit.vim
+
+"Fri Aug 29 00:00:07 CST 2014
+"set case sensetive
+set ignorecase
+set smartcase
+
+nnoremap <silent> ~V :!vim ~/.vimrc<CR>
+
+
+"Wed Sep  3 15:38:07 CST 2014
+"set scrollbind
+"
+" Change the !python to !P in command model
+cnoremap PF Python %
+cnoremap XX X
+cnoremap X x
+" Added to added a new function with Mac-Command
+
+" Added the python script to customize the vim
+"Add in:Wed Oct 15 17:01:04 CST 2014
+function! InsertTime()
+python << pythonEnd
+import random
+import vim
+import datetime
+vim.current.buffer.append(str(datetime.datetime.now()).rstrip())
+pythonEnd
+endfunction
+nnoremap <silent> _t :call InsertTime()<CR>
+"Insert Time End
+
+
+"added in 2014-10-15 22:44:00.667713
+"to build added two functions that could move the line wich <c-j> and <c-k>
+
+"Liner Changer Finished!
+
+"Let Vim support mark syntax
+
+au BufRead,BufNewFile *.md set filetype=markdown
+"Add in:2014-10-16 11:33:59.425685
+"i
+"
+"In order to add the plugin
+filetype plugin indent on
+
