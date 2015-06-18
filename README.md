@@ -12,4 +12,7 @@ This is my vim configuration file.
 
 You can send a mail to mincyuankao@gmail.com
 
-Add something new in 2015-3-26
+Last Modified Date: 2015-6-18
+
+
+
