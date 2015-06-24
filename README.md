@@ -4,9 +4,9 @@ It's my vim configuration file, if you have any advice, you could mail to to: mi
 
 # What's included?
 
-	+ Plugins
-	+ Maps
-	+ New Function
+	  - Plugins
+	  - Maps
+	  - New Function
 
 # If you have some question
 
