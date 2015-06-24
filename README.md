@@ -12,6 +12,6 @@ It's my vim configuration file, if you have any advice, you could mail to to: mi
 
 You can send a mail to mincyuankao@gmail.com
 
-Last Modified Date: 2015-6-24:11:00
+Last Modified Date: 2015-6-24:11:05
 
 
